@@ -6,8 +6,6 @@
 	<string>de.josagesell.alfred-feinkost-internet</string>
 	<key>category</key>
 	<string>Internet</string>
-	<key>webaddress</key>
-	<string>http://github.com/josa42/alfred-feinkost-internet</string>
 	<key>connections</key>
 	<dict>
 		<key>566B513B-CF81-4DA6-8ECB-01A9A05C6C6F</key>
@@ -160,5 +158,9 @@ end alfred_script</string>
 			<integer>220</integer>
 		</dict>
 	</dict>
+	<key>version</key>
+	<string>1.0.1</string>
+	<key>webaddress</key>
+	<string>http://github.com/josa42/alfred-feinkost-internet</string>
 </dict>
 </plist>
