@@ -54,6 +54,8 @@ func run() {
 	args := wf.Args()
 	flag.Parse()
 
+	query := strings.Join(args, " ")
+
 	if flagCheck {
 		runCheck()
 		return
@@ -63,7 +65,7 @@ func run() {
 
 	wf.Configure(aw.SuppressUIDs(true))
 
-	if wf.UpdateAvailable() {
+	if query == "" && wf.UpdateAvailable() {
 		wf.NewItem("Update available!").
 			Subtitle("↩ to install").
 			Autocomplete("workflow:update").
@@ -79,7 +81,7 @@ func run() {
 
 	for _, e := range index.Episodes {
 
-		if strings.Contains(strings.ToLower(e.Title), strings.Join(args, " ")) {
+		if strings.Contains(strings.ToLower(e.Title), query) {
 			wf.
 				NewItem(e.Title).
 				Subtitle("Open in Browser").
@@ -113,4 +115,3 @@ func runTriggerCheck() {
 		}
 	}
 }
-
