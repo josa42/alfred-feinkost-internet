@@ -10,7 +10,7 @@ Player.
 
 ## Installation
 
-- Download the `.alfredworkflow` file from the [latest version](https://github.com/josa42/alfred-feinkost-internet/releases/download/1.0.1/feinkost-internet-1.0.1.alfredworkflow)
+- Download the `.alfredworkflow` file from the [latest version](https://github.com/josa42/alfred-feinkost-internet/releases/download/1.0.1/alfred-feinkost-internet-1.0.1.alfredworkflow)
 - Double click `.alfredworkflow` file to install the workflow
 
 ## Update
